@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DF {
+public class DC {
 	
 	static long elapsedTime;
 
@@ -41,7 +41,7 @@ public class DF {
 
     public static void main(String[] args){
     	
-    Scanner read= new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
 	System.out.println("Enter the size of the array");
 	int n=read.nextInt();
 	
@@ -53,14 +53,7 @@ public class DF {
 	
 	int []Ar1=new int[n];
 	int []Ar2=new int[n];
- 
-    /*System.out.println("Enter the elements of the first array");
-    for(int i=0; i<n; i++) {
-    Ar1[i] = read.nextInt();}
-    
-    System.out.println("Enter the elements of the second array");
-    for(int i=0; i<n; i++) {
-    Ar2[i] = read.nextInt();}*/
+
 	
 	for (int j = 0; j<n; j++)
 	{
@@ -77,9 +70,9 @@ public class DF {
 	long start = System.currentTimeMillis();
 	double Median = DCGetMedian( Ar1, Ar2, 0, 0,n-1,n-1);
 	long end = System.currentTimeMillis();
-	elapsedTime = end - start;
-    System.out.println("Median is "+ Median);
-    System.out.println("Time elapsed is "+elapsedTime +"ms");
+	elapsedTime = end - start; // to see the time elapsed to compute
+        System.out.println("Median is "+ Median);
+        System.out.println("Time elapsed is "+ elapsedTime +"ms");
 
     }
     }
