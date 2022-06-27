@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DC {
+public class DF {
 	
 	static long elapsedTime;
 
