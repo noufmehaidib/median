@@ -55,17 +55,13 @@ public class DF {
 	int []Ar2=new int[n];
 
 	
-	for (int j = 0; j<n; j++)
-	{
-	    int pick = (int)( Math.random() * 9999 );
-	    Ar1[j] = pick;
-	}
-	
-	for (int j = 0; j<n; j++)
-	{
-	    int pick = (int)( Math.random() * 9999 );
-	    Ar2[j] = pick;
-	}
+        System.out.println("Enter the elements of the first array");
+        for(int i=0; i<n; i++) {
+        Ar1[i] = read.nextInt();}
+        
+        System.out.println("Enter the elements of the second array");
+        for(int i=0; i<n; i++) {
+        Ar2[i] = read.nextInt();}
    
 	long start = System.currentTimeMillis();
 	double Median = DCGetMedian( Ar1, Ar2, 0, 0,n-1,n-1);
