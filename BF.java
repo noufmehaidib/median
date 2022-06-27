@@ -49,25 +49,13 @@ public class BF {
     	int []Ar1=new int[n];
     	int []Ar2=new int[n];
       
-        /*System.out.println("Enter the elements of the first array");
+        System.out.println("Enter the elements of the first array");
         for(int i=0; i<n; i++) {
         Ar1[i] = read.nextInt();}
         
         System.out.println("Enter the elements of the second array");
         for(int i=0; i<n; i++) {
-        Ar2[i] = read.nextInt();}*/
-    	
-    	for (int j = 0; j<n; j++)
-    	{
-    	    int pick = (int)( Math.random() * 9999 );
-    	    Ar1[j] = pick;
-    	}
-    	
-    	for (int j = 0; j<n; j++)
-    	{
-    	    int pick = (int)( Math.random() * 9999 );
-    	    Ar2[j] = pick;
-    	}
+        Ar2[i] = read.nextInt();}
     	
         long start = System.currentTimeMillis();
         double num =BFgetMedian(Ar1, Ar2, n);
